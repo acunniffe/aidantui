@@ -1,0 +1,25 @@
+# AidanTUI Configuration
+# Copy this to ~/.aidantui/config.toml and fill in your credentials
+
+[google]
+client_id = "YOUR_CLIENT_ID.apps.googleusercontent.com"
+client_secret = "YOUR_CLIENT_SECRET"
+refresh_token = ""  # Populated by: bun run setup-auth
+
+[gmail]
+query = "newer_than:7d"
+domains = ["example.com"]  # Only sync emails from/to these domains
+
+[slack]
+token = ""  # xoxb-... bot token
+channels = []  # Channel IDs to monitor, e.g. ["C01ABC123"]
+
+[recording]
+format = "wav"
+sample_rate = 44100
+device = "default"
+
+[general]
+data_dir = "~/.aidantui"
+sync_on_startup = true
+calendar_range_days = 30
