@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "bun run src/index.tsx",
     "setup-auth": "bun run scripts/setup-auth.ts",
-    "compile-pipeline": "bun run scripts/compile-pipeline.ts"
+    "compile-pipeline": "bun run scripts/compile-pipeline.ts",
+    "test:git-ai-hooks": "bash scripts/test-git-ai-hooks.sh"
   },
   "dependencies": {
     "@opentui/core": "latest",

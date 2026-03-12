@@ -13,6 +13,14 @@ AidanTUI is a personal CRM terminal user interface (TUI) built with **Bun**, **R
 ### git-ai
 This project uses [git-ai](https://github.com/acunniffe/git-ai) to track AI-generated code attribution. The update script installs it automatically. After installation, `git` is wrapped by `git-ai` via `~/.git-ai/bin/git` on PATH. Use `git-ai stats` to see AI authorship breakdown and `git-ai blame <file>` for per-line attribution.
 
+**Hooks locations:** The canonical hooks config is committed at `.cursor/hooks.json` in the repo. The update script copies it to the two locations the Cloud Agent exec-daemon actually checks:
+- User-level: `~/.cursor/hooks.json`
+- Project-level: `~/.cursor/projects/workspace/.cursor/hooks.json` (the daemon slugifies `/workspace` to `workspace`)
+
+**Cursor Cloud hooks caveat:** The exec-daemon loads hooks once at startup via `StaticHooksConfigLease` and never reloads. If hooks.json files don't exist when the daemon boots, hooks won't fire for that session. The VM snapshot must include these files. Run `bun run test:git-ai-hooks` to diagnose — the "timing analysis" check flags if hooks.json was created after the daemon started.
+
+**Missing vscdb in Cloud:** The cursor preset tries to read `~/.config/Cursor/User/globalStorage/state.vscdb` for transcript metadata. This file does not exist in Cloud Agent containers. git-ai degrades gracefully (warns and proceeds without transcript details).
+
 ### Key caveats
 - Bun must be on `$PATH`. The update script ensures `~/.bun/bin` is exported, but new shell sessions may need `export PATH="$HOME/.bun/bin:$PATH"`.
 - git-ai must be on `$PATH`. The update script ensures `~/.git-ai/bin` is exported. The git-ai installer also writes this to `~/.bashrc`.
