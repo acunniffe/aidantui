@@ -11,6 +11,8 @@ Un CRM personnel et suivi d'activite oriente terminal, construit avec Bun, React
 - [العربية](./README.ar.md)
 - Francais (ce fichier)
 
+Note de documentation: les ameliorations de traduction de la communaute sont bienvenues.
+
 ## Fonctionnalites
 
 - Suit les etapes du pipeline commercial.

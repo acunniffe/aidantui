@@ -9,6 +9,7 @@
 - [हिन्दी](./README.hi.md)
 - [Español](./README.es.md)
 - العربية (هذا الملف)
+- [Francais](./README.fr.md)
 
 ## ماذا يفعل
 

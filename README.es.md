@@ -9,6 +9,9 @@ Un CRM personal y rastreador de actividad, orientado a terminal, construido con 
 - [हिन्दी](./README.hi.md)
 - Español (este archivo)
 - [العربية](./README.ar.md)
+- [Francais](./README.fr.md)
+
+Nota de documentacion: se agradecen mejoras de traduccion de la comunidad.
 
 ## Qué hace
 

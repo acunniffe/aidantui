@@ -9,6 +9,9 @@ A terminal-first personal CRM and activity tracker built with Bun, React, and Op
 - [हिन्दी](./README.hi.md)
 - [Español](./README.es.md)
 - [العربية](./README.ar.md)
+- [Francais](./README.fr.md)
+
+Documentation note: community translation improvements are welcome.
 
 ## What it does
 
