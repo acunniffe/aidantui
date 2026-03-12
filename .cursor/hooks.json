@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "afterFileEdit": [
+      {
+        "command": "/workspace/scripts/cursor_hook_log.sh"
+      }
+    ],
+    "beforeSubmitPrompt": [
+      {
+        "command": "/workspace/scripts/cursor_hook_log.sh"
+      }
+    ]
+  },
+  "version": 1
+}
