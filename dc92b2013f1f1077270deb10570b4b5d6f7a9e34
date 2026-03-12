@@ -1,0 +1,21 @@
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.10",
+  "base_commit_sha": "dc92b2013f1f1077270deb10570b4b5d6f7a9e34",
+  "prompts": {
+    "9ad2db2b42a2edef": {
+      "agent_id": {
+        "tool": "mock_ai",
+        "id": "ai-thread-1773323274251939577",
+        "model": "unknown"
+      },
+      "human_author": "Cursor Agent <cursoragent@cursor.com>",
+      "messages": [],
+      "total_additions": 1,
+      "total_deletions": 0,
+      "accepted_lines": 1,
+      "overriden_lines": 0
+    }
+  }
+}
