@@ -1,0 +1,23 @@
+git_ai_probe_cli.txt
+  c1aae4a792198b0f 1-2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.21",
+  "base_commit_sha": "bd7d4ed1f6fa63dcabf34ae2e334843bdfc5155f",
+  "prompts": {
+    "c1aae4a792198b0f": {
+      "agent_id": {
+        "tool": "mock_ai",
+        "id": "ai-thread-1774651038713656279",
+        "model": "unknown"
+      },
+      "human_author": "Cursor Agent <cursoragent@cursor.com>",
+      "messages": [],
+      "total_additions": 2,
+      "total_deletions": 0,
+      "accepted_lines": 2,
+      "overriden_lines": 0
+    }
+  }
+}
