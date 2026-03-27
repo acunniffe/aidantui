@@ -1,0 +1,2 @@
+Git AI CLI probe
+Committed using git-ai CLI wrapper.
