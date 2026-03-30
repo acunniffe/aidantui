@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      { "command": ".cursor/hooks/dispatch.sh sessionStart", "timeout": 10 }
+    ],
+    "sessionEnd": [
+      { "command": ".cursor/hooks/dispatch.sh sessionEnd", "timeout": 10 }
+    ],
+    "preToolUse": [
+      { "command": ".cursor/hooks/dispatch.sh preToolUse", "timeout": 10 }
+    ],
+    "postToolUse": [
+      { "command": ".cursor/hooks/dispatch.sh postToolUse", "timeout": 10 }
+    ],
+    "postToolUseFailure": [
+      {
+        "command": ".cursor/hooks/dispatch.sh postToolUseFailure",
+        "timeout": 10
+      }
+    ],
+    "subagentStart": [
+      { "command": ".cursor/hooks/dispatch.sh subagentStart", "timeout": 10 }
+    ],
+    "subagentStop": [
+      { "command": ".cursor/hooks/dispatch.sh subagentStop", "timeout": 10 }
+    ],
+    "beforeShellExecution": [
+      {
+        "command": ".cursor/hooks/dispatch.sh beforeShellExecution",
+        "timeout": 10
+      }
+    ],
+    "afterShellExecution": [
+      {
+        "command": ".cursor/hooks/dispatch.sh afterShellExecution",
+        "timeout": 10
+      }
+    ],
+    "beforeMCPExecution": [
+      {
+        "command": ".cursor/hooks/dispatch.sh beforeMCPExecution",
+        "timeout": 10
+      }
+    ],
+    "afterMCPExecution": [
+      { "command": ".cursor/hooks/dispatch.sh afterMCPExecution", "timeout": 10 }
+    ],
+    "beforeReadFile": [
+      { "command": ".cursor/hooks/dispatch.sh beforeReadFile", "timeout": 10 }
+    ],
+    "afterFileEdit": [
+      { "command": ".cursor/hooks/dispatch.sh afterFileEdit", "timeout": 10 }
+    ],
+    "beforeSubmitPrompt": [
+      {
+        "command": ".cursor/hooks/dispatch.sh beforeSubmitPrompt",
+        "timeout": 10
+      }
+    ],
+    "preCompact": [
+      { "command": ".cursor/hooks/dispatch.sh preCompact", "timeout": 10 }
+    ],
+    "afterAgentResponse": [
+      {
+        "command": ".cursor/hooks/dispatch.sh afterAgentResponse",
+        "timeout": 10
+      }
+    ],
+    "afterAgentThought": [
+      {
+        "command": ".cursor/hooks/dispatch.sh afterAgentThought",
+        "timeout": 10
+      }
+    ],
+    "beforeTabFileRead": [
+      {
+        "command": ".cursor/hooks/dispatch.sh beforeTabFileRead",
+        "timeout": 10
+      }
+    ],
+    "afterTabFileEdit": [
+      { "command": ".cursor/hooks/dispatch.sh afterTabFileEdit", "timeout": 10 }
+    ],
+    "stop": [
+      {
+        "command": ".cursor/hooks/dispatch.sh stop",
+        "timeout": 10,
+        "loop_limit": 20
+      }
+    ]
+  }
+}
