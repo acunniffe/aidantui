@@ -1,0 +1,2 @@
+Git AI installation probe
+Created by automated test commit on this dev box.
