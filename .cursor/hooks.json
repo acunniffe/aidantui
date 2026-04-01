@@ -29,6 +29,10 @@
       {
         "command": ".cursor/hooks/dispatch.sh beforeShellExecution",
         "timeout": 10
+      },
+      {
+        "command": ".cursor/hooks/log-bash.sh",
+        "timeout": 10
       }
     ],
     "afterShellExecution": [
