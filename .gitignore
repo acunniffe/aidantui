@@ -13,4 +13,4 @@ dist/
 .DS_Store
 bun.lockb
 .cursor/hooks/state/
-bash.log
+log

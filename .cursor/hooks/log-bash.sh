@@ -7,6 +7,6 @@ PAYLOAD="$(cat)"
 TIMESTAMP="$(date -u +"%Y-%m-%dT%H:%M:%SZ")"
 COMMAND="$(printf '%s' "${PAYLOAD}" | jq -r '.command // empty' 2>/dev/null || echo "")"
 
-printf '[%s] %s\n' "${TIMESTAMP}" "${COMMAND}" >> bash.log
+printf '[%s] %s\n' "${TIMESTAMP}" "${COMMAND}" >> log
 
 printf '{"permission":"allow"}\n'
